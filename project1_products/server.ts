@@ -32,6 +32,7 @@ async function Handler(req: Request)
         return DELETE.HandleDeleteRequest(req);
     }
 
+    console.log(req);
 
     return new Response(null, {status: 404})
 }
